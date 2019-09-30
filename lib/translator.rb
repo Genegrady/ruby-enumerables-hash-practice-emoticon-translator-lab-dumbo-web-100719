@@ -10,9 +10,9 @@ def load_library(file)
    },
    "get_emoticon" => {}
  }
- library.each do |meaning, emoticons|
-    result["get_meaning"][emoticons[1]] = meaning
-    result["get_emoticon"][emoticons[0]] = emoticons[1]
+ emoticons.each do |meaning, emoticons|
+    remoticons_hash["get_meaning"][emoticons[1]] = meaning
+    emoticons_hash["get_emoticon"][emoticons[0]] = emoticons[1]
   end
   result
 end
