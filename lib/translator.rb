@@ -4,7 +4,7 @@ require "yaml"
 
 def load_library(file)
  emoticons = YAML.load(".lib/emoticons.yml")
- emoticons -hash = {}
+ emoticons_hash = {}
 end
 
 def get_japanese_emoticon
